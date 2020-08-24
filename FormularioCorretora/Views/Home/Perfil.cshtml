@@ -1,0 +1,21 @@
+﻿@model FormularioCorretora.Models.PerfilInvestdorModel
+
+<style>
+        body {
+            background-image: url("../Content/Images/Background.jpg");
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+</style>
+
+<div>
+    <h2 style="text-align: center"><b>Seu perfil de investidor definido é:</b></h2>
+    <hr />        
+        <h3 style="font-family: Bree Serif; text-align: center; font-size: 60px"> @Html.DisplayFor(model => model.PerfilInvestidor)</h3>
+        <p style="font-family: Bree Serif; text-align: center; font-size: 25px"> @Html.DisplayFor(model => model.Descricao)</p>
+</div>
+<p>
+    @Html.ActionLink("Voltar para o cadastro", "Cadastro")
+</p>

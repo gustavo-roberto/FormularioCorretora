@@ -1,0 +1,58 @@
+﻿
+<style>
+    body {
+        background-image: url("../Content/Images/Background.jpg");
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #000;
+    }
+
+    .buttonAutorizaOpenBanking {
+        box-shadow: 0px -3px 14px -7px #3dc21b;
+        background-color: #5eeb67;
+        border-radius: 13px;
+        border: 2px solid #6a8a84;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 20px 64px;
+        text-decoration: none;
+        text-shadow: 1px 2px 8px #2f6627;
+        position: relative;
+        top: 50%;
+        left: 40%;
+    }
+
+        .buttonAutorizaOpenBanking:hover {
+            background-color: #25c230;
+        }
+
+        .buttonAutorizaOpenBanking:active {
+            position: relative;
+            top: 1px;
+        }
+
+</style>
+
+
+
+<div>
+    <h2 style="text-align: center"><b>Você gostaria de autorizar seus dados bancários satravés do Open Banking:</b></h2>
+    <hr />
+    <p style="font-family: Bree Serif; text-align: center; font-size: 25px">
+        Ao autorizar o uso dos seus dados bancários pelo Open Banking,
+        podemos definir de forma muito mais assertiva o seu perfil de investidor através de algoritmos avançados de análise de dados!
+    </p>
+
+    </br>
+    </br>
+
+    <button class="buttonAutorizaOpenBanking" onclick="location.href='@Url.Action("Perfil", "Home")'">Aceito</button>
+</div>
+<p>
+    @Html.ActionLink("Voltar para o cadastro", "Cadastro")
+</p>
